@@ -1,0 +1,1130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Klinte bygdegårdsförening">
+    <meta name="author" content="">
+
+    <title>TeenyScript</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/app.css" rel="stylesheet">
+
+</head>
+
+<body>
+<div class="container">
+
+    <div class="col-lg-12 col-md-offset-4">
+            <div style="white-space: pre ; display: block; unicode-bidi: embed;font-family: monospace; ">
+	 _____                 _____         _     _
+	|_   _|___ ___ ___ _ _|   __|___ ___|_|___| |_
+	  | | | -_| -_|   | | |__   |  _|  _| | . |  _|
+	  |_| |___|___|_|_|_  |_____|___|_| |_|  _|_|
+	                  |___|               |_|
+            </div>
+    </div>
+</div>
+<div class="container" id="container">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+
+
+    <div class="row">
+        <div class="col-md-3" style="z-index: 150;">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <h4><i class="fa fa-github" aria-hidden="true"></i> <a
+                                href="https://github.com/tarreislam/TeenyScript">TeenyScript</a></h4>
+                </div>
+                <ul class="list-group">
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#20-#DEBUG"
+                                                       data-id="20">#DEBUG</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#11-#Include"
+                                                       data-id="11">#Include</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#6-@Extends"
+                                                       data-id="6">@Extends</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#8-@MethodName"
+                                                       data-id="8">@MethodName</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#9-@MethodParams"
+                                                       data-id="9">@MethodParams</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#10-@Namespace (Get)"
+                                                       data-id="10">@Namespace (Get)</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#1-@Namespace (Set)"
+                                                       data-id="1">@Namespace (Set)</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#3-@Public, @Private, @Readonly"
+                                                       data-id="3">@Public, @Private, @Readonly</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#2-@Use"
+                                                       data-id="2">@Use</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#19-Closure Func ... (EndFunc)"
+                                                       data-id="19">Closure Func ... (EndFunc)</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#12-Func(Class)"
+                                                       data-id="12">Func(Class)</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#13-Func(Construct)"
+                                                       data-id="13">Func(Construct)</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#14-Func(Extension)"
+                                                       data-id="14">Func(Extension)</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#18-Heredoc (&lt;&lt;&lt;) ... (&gt;&gt;&gt;)"
+                                                       data-id="18">Heredoc (&lt;&lt;&lt;) ... (&gt;&gt;&gt;)</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#16-Lists { }"
+                                                       data-id="16">Lists { }</a>
+                        </li>
+                                            <li class="list-group-item"><a class="doc_child_item"
+                                                       href="#17-_TS_ErrorNotify"
+                                                       data-id="17">_TS_ErrorNotify</a>
+                        </li>
+                    
+                </ul>
+                <div class="panel-footer">zzz</div>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+                            <div id="20">
+                    <h1>
+                        <span style="color:#FF7817"> #DEBUG</span>
+                        <small class="text-muted"> Used to debug</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            This keyword is used to make debugging easier while testing parts of code<br />
+Everything after #DEBUG will not be parsed by TeenyScript and not included from other files
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">#DEBUG
+Func RegularAutoIt()
+
+EndFunc
+
+RegularAutoIt()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="11">
+                    <h1>
+                        <span style="color:#FF7817"> #Include</span>
+                        <small class="text-muted"> TeenyScript includes</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            <ul><br />
+<li>Both forward/ and backwardslashes\ are accepted, but later translated to backslashes \</li><br />
+<li>Directory-popping &bsol; and &bsol;&bsol; works with the recursive include tags <b>*.ts</b> and <b>**.ts</b></li><br />
+</ul>
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">; Include another .ts file
+#include &lt;file.ts&gt;
+
+; Regular .au3 files are just parsed as they are
+#include &lt;file.au3&gt;
+
+; Include a whole subdirectory
+#include &lt;directory\*.ts&gt;
+
+; Include a whole subdirectory recursively
+#include &lt;directory\**.ts&gt;
+
+; ~ Include from parent \ script directory
+
+; Lets say you have the folder &quot;c:\autoit\&quot; that has this file structure:
+;  \Main.ts.au3						c:\autoit\main.ts.au3
+;  \sub\Somethingelse.ts.au3			c:\autoit\sub\somethingelse.ts.au3
+;  \sub\Deeper\Somethingelse.ts.au3	c:\autoit\sub\Deeper\somethingelse.ts.au3
+
+; Make belive \Main.ts.au3 looks like this:
+#include &lt;sub\Somethingelse.ts.au3&gt;
+
+; And \sub\Somethingelse.ts.au3 looks like this:
+#include &lt;\sub\deeper\Somethingelse.ts&gt;
+
+; When you start Main.ts.au3, TS will include &quot;c:\autoit\sub\somethingelse.ts.au3&quot; first, then from that file, TS will include &quot;c:\autoit\sub\Deeper\somethingelse.ts.au3&quot;
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="6">
+                    <h1>
+                        <span style="color:#FF7817"> @Extends</span>
+                        <small class="text-muted"> Extends another class</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            May not be nested
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">; An extension acts almost like a class, but it will never return the class object (And no parameters may be passed either)
+
+$myExtension = Func(Extension)
+
+	@Public $public_method = Func()
+		; Prompt something
+		MsgBox(0,0, $this.name)
+	EndFunc
+
+EndFunc
+
+$MyClass = Func(Class)
+	@Public $this.name = &quot;TarreTarreTarre&quot;
+	; Inherit everything from the extension
+	@Extends $myExtension
+
+EndFunc
+
+
+$Main = Func()
+	Local $Example = $MyClass()
+
+	; Call some method from the class Object
+	$Example.public_method()
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="8">
+                    <h1>
+                        <span style="color:#FF7817"> @MethodName</span>
+                        <small class="text-muted"> Retrives the Methods name</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                        
+                            <tr>
+                                <th>Syntax</th>
+                                <td>@MethodName</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Return (Success)</th>
+                                <td>The name of the method as a STRING (Without namespaces)</td>
+                            </tr>
+                        
+                                                    <tr>
+                                <th>Return (Failure)</th>
+                                <td>Unkown macro au3 error</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            This macro only works within .ts files
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">$Example_one = Func()
+
+	MsgBox(0, &quot;&quot;, &quot;The name of this method is: &quot; &amp; @MethodName)
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="9">
+                    <h1>
+                        <span style="color:#FF7817"> @MethodParams</span>
+                        <small class="text-muted"> Retrives the parameters</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                        
+                            <tr>
+                                <th>Syntax</th>
+                                <td>@MethodParams</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Return (Success)</th>
+                                <td>The method parameters as a STRING (Without namespaces)</td>
+                            </tr>
+                        
+                                                    <tr>
+                                <th>Return (Failure)</th>
+                                <td>Unkown macro au3 error</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            This macro only works within .ts files
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">$Example_one = Func($name, $lastname = &quot;doe&quot;)
+
+	MsgBox(0, &quot;&quot;, &quot;The params of this method is: &quot; &amp; @MethodParams)
+
+EndFunc(&quot;TarreTarreTarre&quot;)
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="10">
+                    <h1>
+                        <span style="color:#FF7817"> @Namespace (Get)</span>
+                        <small class="text-muted"> Retrive the current Namespace</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                        
+                            <tr>
+                                <th>Syntax</th>
+                                <td>@Namespace</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Return (Success)</th>
+                                <td>The actual name of the given namespace with forward slashes</td>
+                            </tr>
+                        
+                                                    <tr>
+                                <th>Return (Failure)</th>
+                                <td>Empty string</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            -
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">@Namespace Mynamespace
+
+$MyFunc = Func()
+	MsgBox(0,0, &quot;We are in the namespace: &quot; &amp; @Namespace)
+EndFunc
+
+$Main = Func()
+
+	Mynamespace/$MyFunc()
+
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="1">
+                    <h1>
+                        <span style="color:#FF7817"> @Namespace (Set)</span>
+                        <small class="text-muted"> Assign a file with a namespace</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">@Namespace Name/Space
+
+$MyFunc = Func()
+	MsgBox(0,0,&quot;Hello!&quot;)
+EndFunc
+
+$Main = Func()
+
+	; every global-scoped variable can only be accesed through the namespace of the current file
+	Name/Space/$MyFunc()
+
+	; This will throw an error (Try and uncomment the code below)
+	;$MyFunc()
+
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="3">
+                    <h1>
+                        <span style="color:#FF7817"> @Public, @Private, @Readonly</span>
+                        <small class="text-muted"> Access scope</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            <ul><br />
+<li>Methods can only use @Private and @Public</li><br />
+<li>Properties can use all three</li><br />
+</ul>
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">$MyClass = Func(Class)
+	
+	; Can be accesed but not changed
+	@Readonly $this.book = &quot;This can only be read&quot;
+	; Can be accesed and changed anywhere
+	@Public $this.age = 27
+	; Can be accesed and changed within the class only
+	@Private $this.name = &quot;TarreTarreTarre&quot;
+	
+	
+	; This is a public method
+	; Can be accesed anywhere
+	$getName = Func()
+		Return $this.name
+	EndFunc
+	
+	; This is also a public method
+	; Can be accesed anywhere
+	@Public $getBook = Func()
+		Return $this.book
+	EndFunc
+	
+	; Private method
+	; Can be accesed within the class only
+	@Private $setName = Func($sName)
+		
+	EndFunc
+
+EndFunc(); instansiate the class upon creation
+
+
+$Main = Func()
+	
+	; Acces the public variable (note, no method)
+	MsgBox(0, &quot;Example 1&quot;, &quot;Access public property&quot;)
+	ConsoleWrite(&quot;$this.age = &quot; &amp; $MyClass.age &amp; @CRLF)
+	
+	; # # # # Readonly example
+	; This will cause an COM error
+	MsgBox(0, &quot;Example 2&quot;, &quot;Attempt to change Readonly property&quot;)
+	$MyClass.book = &quot;Chaning the book&quot;
+	
+
+	;  # # # # # Private example
+	; This will cause an &quot;unkown name&quot; COM error since the property is private
+	MsgBox(0, &quot;Example 3&quot;, &quot;Access private method&quot;)
+	ConsoleWrite(&quot;$MyClass.name = &quot; &amp; $MyClass.name &amp; @CRLF)
+	
+	; This will display the value since we are getting the private property -
+	; thru an public method
+	MsgBox(0, &quot;Example 4&quot;, &quot;Access public method which contains private properties&quot;)
+	ConsoleWrite(&quot;$MyClass.getName() = &quot; &amp; $MyClass.getName() &amp; @CRLF)
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="2">
+                    <h1>
+                        <span style="color:#FF7817"> @Use</span>
+                        <small class="text-muted"> Namespace alias inside TS functions and methods</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                        
+                            <tr>
+                                <th>Syntax</th>
+                                <td>@Use x AS Y</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Return (Success)</th>
+                                <td>Actual Variable-function</td>
+                            </tr>
+                        
+                                                    <tr>
+                                <th>Return (Failure)</th>
+                                <td>Au3 Error &quot;Unkown function ...&quot;</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            <ul><br />
+<li>Aliases may only be [a-z]+</li><br />
+<li>@Use is unique for each super parent</li><br />
+</ul>
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">@Namespace hello/this/namespace/is/long
+
+$MyClass = Func(Class)
+	$method = Func()
+		MsgBox(0,0,&quot;This is the namespace we are in at: &quot;&amp;@Namespace)
+	EndFunc
+
+EndFunc
+
+
+$Main = Func()
+	;Assign our alias
+	@Use hello/this/namespace/is/long AT short
+
+	; Call the class with our alias
+	short/$MyClass().method()
+	; Call directly from global namespace
+	hello/this/namespace/is/long/$MyClass().method()
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="19">
+                    <h1>
+                        <span style="color:#FF7817"> Closure Func ... (EndFunc)</span>
+                        <small class="text-muted"> Autoit function Closures</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                        
+                            <tr>
+                                <th>Syntax</th>
+                                <td>Func() ..... (EndFunc)</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Return (Success)</th>
+                                <td>A closure</td>
+                            </tr>
+                        
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            Closures can be used everywhere.
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">; Our helper method
+$isCallable = Func($unk)
+	Local $bIsCallable = False
+	if FuncName($unk) Or IsFunc($unk) Then $bIsCallable = True
+
+	; Now we call the callable function
+	$unk()
+
+	Return $bIsCallable
+EndFunc
+
+$Main = Func()
+
+	; Regular function
+	$function_a = Func()
+		MsgBox(0, &quot;&quot;, &quot;hello from &quot;&amp;@MethodName)
+	EndFunc
+
+	; Check to see if $function_a is a function
+	If $isCallable($function_a) Then
+		MsgBox(0, &quot;&quot;, &quot;$function_a is a Callable function&quot;)
+	Else
+		MsgBox(0, &quot;&quot;, &quot;$function_a is _NOT_ a Callable function&quot;)
+	EndIf
+
+	; Now we do the same with a closure
+	If $isCallable(Func()
+		;Some function we passing as a parameter
+		MsgBox(0,0,&quot;Hello from unkown name&quot;)
+	(EndFunc)) Then
+
+		MsgBox(0, &quot;&quot;, &quot;This is a Callable function&quot;)
+	Else
+		MsgBox(0, &quot;&quot;, &quot;This is _NOT_ a Callable function&quot;)
+	EndIf
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="12">
+                    <h1>
+                        <span style="color:#FF7817"> Func(Class)</span>
+                        <small class="text-muted"> Create a Class</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            No protected methods exists in AutoitObject, so we cannot have that either..
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">#include &lt;Array.au3&gt;
+$MyClass = Func(class)
+
+	@Private $this.name = &quot;TarreTarreTarre&quot;
+
+	;Public class
+	$method_a = Func()
+		MsgBox(0, &quot;&quot;, &quot;Hello!&quot;)
+	EndFunc
+
+	;Private class (Can only be called within this class)
+	@Private $method_b = Func($a,$b, $c)
+
+	EndFunc
+
+EndFunc
+
+
+#DEBUG
+
+; Retrive properties from the class
+
+Local $UseClass = $MyClass()
+; Display methods of this class
+Local $aMethods = $UseClass.__Methods__
+_ArrayDisplay($aMethods)
+
+; Display properties of this class
+Local $aProps = $UseClass.__Properties__
+_ArrayDisplay($aProps)
+
+;Display the current namespace (if any)
+MsgBox(0, &quot;&quot;, $UseClass.__Namespace__)
+; Display the actual name of the class
+MsgBox(0, &quot;&quot;, $UseClass.__cName__)
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="13">
+                    <h1>
+                        <span style="color:#FF7817"> Func(Construct)</span>
+                        <small class="text-muted"> Create a constructor for a TS class</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            <ul><br />
+<li>Parameters (If any) will be inherited from the parent class, if parameters are declared an <b>TS_Compose_methods</b> error will occur</li><br />
+<li>By default the Construct method always Returns <b>$this</b> but that can be overwritten by just adding a <b>Return</b> statement at the end of the function</li><br />
+<li>The construct may only be assigned Publicly since it will be called outside the class </li><br />
+</ul>
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">$MyClass = Func(Class, $a, $b)
+	@Private $this.__a = Null
+	@Private $this.__b = Null
+
+	$MyConstructor = Func(Construct)
+		$this.__a = $a
+		$this.__b = $b
+		ConsoleWrite(@MethodName &amp; @CRLF)
+	EndFunc
+
+	@Public $ShowData = Func()
+		MsgBox(0,0,(&lt;&lt;&lt;)
+		&quot;__a: {$this.__a}.&quot;
+		&quot;__b: {$this.__b}.&quot;
+		(&gt;&gt;&gt;))
+		Return $this
+	EndFunc
+
+EndFunc
+
+
+$Main = Func()
+
+	; Init class (will also run MyConstructor)
+	Local $Example = $MyClass(25,30)
+
+	; Will display:
+	; __a: 25
+	; __b: 30
+	$Example.ShowData()
+
+	; Call the constructor by its method name (No need to init the class again)
+	$Example.MyConstructor(55, 65)
+
+	; Will display:
+	; __a: 55
+	; __b: 65
+	$Example.ShowData()
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="14">
+                    <h1>
+                        <span style="color:#FF7817"> Func(Extension)</span>
+                        <small class="text-muted"> Create a extension class for multiple usage (DRY)</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">; An extension acts almost like a class, but it will never return the class object (And no parameters may be passed either)
+$ParentClass = Func(Extension)
+	@Private $this.secret_number = 1234567
+	@Readonly $this.protected_name = &quot;TarreTarreTarre&quot;
+
+	@Public $public_method = Func()
+		MsgBox(0, &quot;Hello&quot;, (&lt;&lt;&lt;)
+		&quot;Called method: &quot; &amp; @MethodName
+		&quot;secret_number = {$this.secret_number}&quot;
+		(&gt;&gt;&gt;))
+		$this.private_method()
+	EndFunc
+
+EndFunc
+
+$MyClass = Func(Class)
+	; Extend the Extension
+	@Extends $ParentClass
+
+	@Private $private_method = Func()
+		ConsoleWrite(&quot;Im called private!&quot; &amp; @CRLF)
+	EndFunc
+
+EndFunc
+
+
+$Main = Func()
+	Local $Example = $MyClass()
+
+	; Call some method from the class Object
+	$Example.public_method()
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="18">
+                    <h1>
+                        <span style="color:#FF7817"> Heredoc (&lt;&lt;&lt;) ... (&gt;&gt;&gt;)</span>
+                        <small class="text-muted"> Heredoc</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">$Main = Func()
+
+	$MyVar = &quot;My first var&quot;
+	$MySecondVar = &quot;My Second Var&quot;
+
+	$MyText = (&lt;&lt;&lt;)
+	&quot;First line&quot;
+	&quot;Second line&quot;
+	&quot;&quot;
+	&quot;$MyVar = {$MyVar}&quot;
+	&quot;$MySecondVar = &quot; &amp; $MySecondVar
+	&quot;@IpAdress1 = {@IPAddress1}&quot;
+	&quot;@Computername = &quot; &amp; @ComputerName
+	(&gt;&gt;&gt;)
+
+	; Display mytext
+	MsgBox(0, &quot;Example 1&quot;, $MyText)
+
+	; You can also pass Heredocs as parameters to functions
+	MsgBox(0, &quot;Example 2&quot;, (&lt;&lt;&lt;)
+	&quot;My messagebox&quot;
+	&quot;&quot;
+	&quot;Hello!&quot;
+	(&gt;&gt;&gt;))
+
+EndFunc()
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="16">
+                    <h1>
+                        <span style="color:#FF7817"> Lists { }</span>
+                        <small class="text-muted"> Lists</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                                                
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            When using <b>$list{$Key}</b> TS will parse it as <b>Execute("$list." & $key)</b> but if you are using <b>$list{"key"}</b> TS will parse it as <b>$list.key</b><br />
+<br />
+<ul><br />
+<li>List keys may only contain a-z, 0-9 and _</li><br />
+<li>List keys cannot contain dots/periods.</li><br />
+</ul>
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">;Basic List usage
+$Example_A = Func()
+
+	;Create MyList with 1 key and value
+	Local $myList = {
+		&#039;Name&#039;: &#039;Tarre&#039;
+	}
+
+	;Append more data \ Change previous data on $MyList
+	$myList{&#039;Age&#039;} = 25
+
+	;Create MySecondList with 2 keys and values
+	Local $MySecondList = {
+		&quot;Name&quot; =&gt; &quot;John&quot;,
+		&quot;Age&quot; =&gt; &quot;00&quot;
+	}
+	;Use a variable instead of raw text
+	Local $KeyName = &quot;Age&quot;
+	Local $KeyVal = 1337
+	$MySecondList{$KeyName} = $KeyVal
+
+	; Yes, you can do this also
+	Local $oList = {&#039;myList&#039;: $myList, &#039;mySecondList&#039; =&gt; $MySecondList}
+
+	;Return both our objects
+	Return $oList
+
+EndFunc();call the function on the variable
+
+; Loop through list and print their values
+$Example_B = Func()
+	Local $MyList = {&#039;A&#039;: &#039;Hello FROM A&#039;, &#039;B&#039;: &#039;Hello FROM B&#039;, &#039;C&#039;: &#039;Hello FROM C&#039;}; Create a empty list
+	Local $aNames = [&#039;A&#039;, &#039;B&#039;, &#039;C&#039;]
+
+	For $i = 0 To UBound($aNames) -1
+		MsgBox(0,0,$myList{$aNames[$i]})
+	Next
+
+
+EndFunc
+
+
+#DEBUG
+
+MsgBox(0,&quot;Example A 1&quot;, $Example_A.myList.Name)
+MsgBox(0,&quot;Example A 2&quot;, $Example_A.myList.Age)
+
+MsgBox(0,&quot;Example A 3&quot;, $Example_A.mySecondList.Name)
+MsgBox(0,&quot;Example A 4&quot;, $Example_A.mySecondList.Age)
+
+$Example_B(); Execute examble B
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+                            <div id="17">
+                    <h1>
+                        <span style="color:#FF7817"> _TS_ErrorNotify</span>
+                        <small class="text-muted"> Com error settings for your script</small>
+                    </h1>
+
+                    <table class="table">
+
+                        <tbody>
+                        
+                            <tr>
+                                <th>Syntax</th>
+                                <td>_TS_ErrorNotify($c)</td>
+                            </tr>
+                                                                            <tr>
+                                <th>Return (Success)</th>
+                                <td>Last option used</td>
+                            </tr>
+                        
+                                                    <tr>
+                                <th>Return (Failure)</th>
+                                <td>-</td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                                            <label>Remarks</label>
+                        <div class="well well-sm">
+                            The avilable constants are:<br />
+<b>$_TS_IGNORE</b>, <b>$_TS_CONSOLE</b> and <b>$_TS_MSGBOX</b><br />
+<br />
+Default option for non-compiled scripts is <b>$_TS_CONSOLE</b> and for compiled (exe) scripts is <b>$_TS_MSGBOX</b>
+                        </div>
+                                        
+                        <label>Example code</label>
+                        <pre>
+                        <code class="autoit well"
+                              style="margin:0px; border:0px;">; Ignore all com errors
+$_TS_ErrorNotify = _TS_ErrorNotify($_TS_IGNORE) 
+Local $NotAcomObject = null
+$NotAcomObject.test = 25
+if @error then MsgBox(0, &quot;Triggered&quot;, &quot;Com error!!!&quot;)
+
+; // Restore error reporting
+_TS_ErrorNotify($_TS_ErrorNotify)
+                        </code>
+
+                </pre>
+                    
+                    <hr>
+                    <label>Related content</label>
+                    <div class="form-group">
+                        <button class="btn btn-primary">@Use</button>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                    m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-83029018-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+</div>
+
+
+<footer class="text-center" style="margin-bottom: 55px;">
+    <i class="fa fa-gitlab" aria-hidden="true" style="font-size:70px;"></i>
+    <a href="https://www.autoitscript.com/forum/profile/65348-tarretarretarre/">
+        <div style="width:70px;height:70px; display:inline-block; background: url('https://www.autoitscript.com/images/logo_autoit_210x72.svg')"></div>
+    </a>
+    <i class="fa fa-github" aria-hidden="true" style="font-size:70px;"></i>
+</footer>
+
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
